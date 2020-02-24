@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/navigation" app:startDestination="@id/pilihFragment">
+
+    <fragment android:id="@+id/pilihFragment" android:name="org.d3if4035.pra_assessment.PilihFragment"
+              android:label="PilihFragment">
+        <action android:id="@+id/action_pilihFragment_to_persegiFragment" app:destination="@id/persegiFragment"/>
+        <action android:id="@+id/action_pilihFragment_to_segitigaFragment" app:destination="@id/segitigaFragment"/>
+    </fragment>
+    <fragment android:id="@+id/aboutFragment" android:name="org.d3if4035.pra_assessment.AboutFragment"
+              android:label="AboutFragment"/>
+    <fragment android:id="@+id/persegiFragment" android:name="org.d3if4035.pra_assessment.PersegiFragment"
+              android:label="PersegiFragment">
+        <action android:id="@+id/action_persegiFragment_to_pilihFragment" app:destination="@id/pilihFragment"/>
+    </fragment>
+    <fragment android:id="@+id/segitigaFragment" android:name="org.d3if4035.pra_assessment.SegitigaFragment"
+              android:label="SegitigaFragment">
+        <action android:id="@+id/action_segitigaFragment_to_pilihFragment" app:destination="@id/pilihFragment"/>
+    </fragment>
+</navigation>
